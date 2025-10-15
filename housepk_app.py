@@ -40,11 +40,12 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 @app.route("/")
 def home():
-    return "HousePK - dashboard by B"
+    return "HousePK - API v1 by C"
 
-@app.route("/dashboard")
-def dashboard():
-    return "dashboard B"
+@app.route("/api/v1/ping")
+def ping():
+    return "ping from C"
+
 
 
 @app.route("/login")
