@@ -38,11 +38,14 @@ for feat in feature_list:
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
-@app.route("/", methods=["GET"])
-def index():
-    return render_template("index.html",
-                           feature_meta=feature_meta,
-                           home_msg="HousePK — login flow by A")
+@app.route("/")
+def home():
+    return "HousePK - dashboard by B"
+
+@app.route("/dashboard")
+def dashboard():
+    return "dashboard B"
+
 
 @app.route("/login")
 def login():
