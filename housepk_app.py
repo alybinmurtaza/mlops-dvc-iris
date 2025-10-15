@@ -40,17 +40,20 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 @app.route("/")
 def home():
-    return "HousePK - dashboard by B"
+    # combined message covering everyone’s work
+    return "HousePK — login + dashboard + API"
 
-@app.route("/dashboard")
-def dashboard():
-    return "dashboard B"
-
+@app.route("/api/v1/ping")
+def ping():
+    return "pong from C"
 
 @app.route("/login")
 def login():
     return "login page A"
 
+@app.route("/dashboard")
+def dashboard():
+    return "dashboard B"
 
 @app.route("/predict", methods=["POST"])
 def predict():
