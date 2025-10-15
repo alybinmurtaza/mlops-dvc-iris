@@ -1,4 +1,4 @@
 [core]
     remote = localstore
 ['remote "localstore"']
-    url = D:\dvc-remote
+    url = D:/dvc_cache/mlops_dvc_iris
