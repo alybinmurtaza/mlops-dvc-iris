@@ -51,6 +51,7 @@ def dashboard():
 def login():
     return "login page A"
 
+
 @app.route("/predict", methods=["POST"])
 def predict():
     # build input vector in same order as feature_list
