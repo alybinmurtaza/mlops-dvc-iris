@@ -1,0 +1,9 @@
+cmd: python src/prepare.py --out_dir data
+params:
+  params.yaml:
+    prepare.random_seed: 42
+outs:
+- path: data/iris.csv
+  hash: md5
+  md5: 21d441a28bce4417276097df955afc50
+  size: 2928

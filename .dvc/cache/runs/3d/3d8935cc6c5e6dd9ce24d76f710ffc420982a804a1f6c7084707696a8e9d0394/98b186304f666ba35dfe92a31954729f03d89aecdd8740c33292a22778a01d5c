@@ -1,0 +1,24 @@
+cmd: python src/train.py --data_dir data --model_out model.pkl
+deps:
+- path: data/X_train.npy
+  hash: md5
+  md5: abdc135983612a7ff50c3a300b5b4d55
+  size: 3968
+- path: data/y_train.npy
+  hash: md5
+  md5: 2c2741a338b44cc698b03ddaddd77a6a
+  size: 1088
+- path: src/train.py
+  hash: md5
+  md5: d6b0ebfff707063a2034b2ce7dd9f218
+  size: 875
+params:
+  params.yaml:
+    train.max_depth: 5
+    train.n_estimators: 100
+    train.random_state: 42
+outs:
+- path: model.pkl
+  hash: md5
+  md5: b423048acee4c03e18db32cb2f9db0f4
+  size: 163137

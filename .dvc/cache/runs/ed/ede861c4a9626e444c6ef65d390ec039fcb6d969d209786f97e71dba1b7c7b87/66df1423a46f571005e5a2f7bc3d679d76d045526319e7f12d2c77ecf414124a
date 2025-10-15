@@ -1,0 +1,27 @@
+cmd: python src/evaluate.py --data_dir data --model model.pkl --out 
+  metrics/eval.json
+deps:
+- path: data/X_test.npy
+  hash: md5
+  md5: 6106b6fdfa5e57277f32c885bc1eed51
+  size: 1088
+- path: data/y_test.npy
+  hash: md5
+  md5: c8a14810d1d66e69e3149abda346c748
+  size: 368
+- path: model.pkl
+  hash: md5
+  md5: b423048acee4c03e18db32cb2f9db0f4
+  size: 163137
+- path: src/evaluate.py
+  hash: md5
+  md5: cc48b38c5a00fbfdb9d00b817f813c06
+  size: 932
+params:
+  params.yaml:
+    evaluate.average: macro
+outs:
+- path: metrics/eval.json
+  hash: md5
+  md5: c57dd2e89a75372665eb758f7487453e
+  size: 73
